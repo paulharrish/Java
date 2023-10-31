@@ -2,6 +2,7 @@ package generics;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class CustomArrayList<T> {
 
@@ -11,6 +12,11 @@ public class CustomArrayList<T> {
 
     public CustomArrayList() {
         this.data = (T[]) new Object[DEFAULT_SIZE];
+    }
+
+   
+    public void getList(List<? extends String> list){
+        //we can  pass String and its subclass type of parameters
     }
 
     public void add(T value) {
