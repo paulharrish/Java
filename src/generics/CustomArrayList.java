@@ -15,8 +15,10 @@ public class CustomArrayList<T> {
     }
 
    
-    public void getList(List<? extends String> list){
-        //we can  pass String and its subclass type of parameters
+
+    // this is an example of wild card;
+    static public void getList(ArrayList<? extends Number> list){
+        System.out.println(list);
     }
 
     public void add(T value) {
