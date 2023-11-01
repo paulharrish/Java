@@ -23,9 +23,9 @@ public class Lambdafunctions<T> {
         //we can store the fun in a single variable using consumer type where consumer is an functional interface;
         
         Lambdafunctions<Integer> test = new Lambdafunctions<>();
-        System.out.println(test.operate(13, 14, sum));
-        System.out.println( test.operate(13, 14, diff));
-        System.out.println(test.operate(13, 14, prod));
+        System.out.println(test.operate(15, 14, sum));
+        System.out.println( test.operate(15, 14, diff));
+        System.out.println(test.operate(16, 14, prod));
 
     }
 
