@@ -7,8 +7,8 @@ public class Main {
         int a = 5;
         int b = 0;
         try {
-            String name = "Harrish";
-            if (name.equals("Harrish")) {
+            String name = "harrish";
+            if (name.equalsIgnoreCase("Harrish")) {
                 throw new MyException("Name is harrish");
             }
         } catch (MyException e) {

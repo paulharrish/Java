@@ -2,13 +2,17 @@ package EnumExamples;
 
 public class Basic {
     enum Week implements A {
-        Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday;
+        Monday("mon"), Tuesday("tue");
+
+        String str;
 
         // these are enum constants.
         // they are public static and final.
 
-        Week() {
+        Week(String shortform) {
+
             System.out.println("constructor called for " + this);
+            this.str = shortform;
         }
 
         @Override
@@ -22,13 +26,14 @@ public class Basic {
 
         System.out.println(week.getDeclaringClass());
         week.hello();
-        System.out.println(week.valueOf("Tuesday"));
+        System.out.println(week.valueOf("Monday"));
 
         for (Week day : Week.values()) {
             System.out.println(day);
         }
 
         System.out.println(week.ordinal());
+        System.out.println(week.str);
 
     }
 
