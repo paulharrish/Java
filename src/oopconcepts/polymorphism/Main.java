@@ -2,10 +2,14 @@ package oopconcepts.polymorphism;
 
 public class Main {
     public static void main(String[] args) {
-        Shapes shape = new Circle();
-        shape.area();
-        Shapes shape1 = new Square();
+        Shapes shape1 = new Circle();
         shape1.area();
+        // Shapes shape1 = new Square();
+        // shape1.area();
+
+        Circle circle = (Circle)new Shapes();
+        circle.area();
+
         // Circle circle = new Circle();
         // Square square = new Square();
 
